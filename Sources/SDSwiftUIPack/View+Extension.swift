@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 
 //MARK: Font
-extension View {
+public extension View {
     func sdFont(_ font: Font, color: Color) -> any View {
         if #available(iOS 15.0, *) {
             self.font(font).foregroundStyle(color)
@@ -21,7 +21,7 @@ extension View {
 }
 
 //MARK: Padding
-extension View {
+public extension View {
     func sdPaddingpadding(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0) -> some View {
         return self.padding(EdgeInsets(top: top, leading: leading, bottom: bottom, trailing: trailing))
     }
@@ -46,28 +46,28 @@ extension View {
 }
 
 //MARK: Frame
-extension View {
+public extension View {
     func frame(both: CGFloat, alignment: Alignment = .center) -> some View {
         return self.frame(width: both, height: both, alignment: alignment)
     }
 }
 
 //MARK: skeleton
-extension View {
+public extension View {
     func skeleton(_ isLoading: Bool, reason: RedactionReasons) -> some View {
         self.redacted(reason: isLoading ? .placeholder : [])
     }
 }
 
 //MARK: Keyboard
-extension View {
+public extension View {
     func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
 //MARK: rectReader
-extension View {
+public extension View {
     func rectReader(_ binding: Binding<CGRect>, in space: CoordinateSpace) -> some View {
         self.background(GeometryReader { (geometry) -> AnyView in
             let rect = geometry.frame(in: space)
