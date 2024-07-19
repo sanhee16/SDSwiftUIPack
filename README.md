@@ -11,7 +11,7 @@ iOS 14.0
 ### Swift Package Manager
 
 ```swift
-.package(name: "SDSwiftUIPack", url: "[https://github.com/sanhee16/SwiftUIValueSlider.git](https://github.com/sanhee16/SDSwiftUIPack.git)", from: "1.2.0")
+.package(name: "SDSwiftUIPack", url: "https://github.com/sanhee16/SDSwiftUIPack.git", from: "1.2.0")
 ```
 
 ## Author
