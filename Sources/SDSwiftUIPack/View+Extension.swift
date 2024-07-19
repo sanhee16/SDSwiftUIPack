@@ -11,11 +11,11 @@ import UIKit
 
 //MARK: Font
 public extension View {
-    func sdFont(_ font: Font, color: Color) -> any View {
+    func sdFont(_ font: Font, color: Color) -> some View {
         if #available(iOS 15.0, *) {
-            self.font(font).foregroundStyle(color)
+            return self.font(font).foregroundStyle(color)
         } else {
-            self.font(font).foregroundColor(color)
+            return self.font(font).foregroundColor(color)
         }
     }
 }
