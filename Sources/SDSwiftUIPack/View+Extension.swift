@@ -54,8 +54,8 @@ public extension View {
 
 //MARK: skeleton
 public extension View {
-    func skeleton(_ isLoading: Bool, reason: RedactionReasons) -> some View {
-        self.redacted(reason: isLoading ? .placeholder : [])
+    func skeleton(_ isLoading: Bool, reason: RedactionReasons = .placeholder) -> some View {
+        self.redacted(reason: isLoading ? reason : [])
     }
 }
 
