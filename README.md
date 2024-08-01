@@ -50,6 +50,28 @@ Text("Hello, SplashView!")
     .sdPaddingpadding(top: 10, leading: 10, bottom: 10, trailing: 10)
 ```
 
+### SearchBar
+You can use a Searchbar with various designs. Additionally, you can easily handle changes to the search bar’s text through modifiers such as onChange, onSearch, and onRemoveAll.
+<img src="./Resource/SearchBar.png" width="100px" height="50px"/>
+```swift
+SearchBar("Enter nickname", text: $nickname, type: .none)
+SearchBar("Enter nickname", text: $nickname, type: .back(onClickBack: {
+    print("back!")
+}))
+SearchBar("Enter nickname", text: $nickname, type: .search)
+    .onSearch { newValue in
+        print("onSearch: \(newValue)")
+    }
+    .onChange { newValue in
+        print("onChange: \(newValue)")
+    }
+    .onRemoveAll {
+        print("onRemoveAll")
+    }
+```
+
+
+
 
 ## Author
 
