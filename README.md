@@ -37,6 +37,8 @@ Text("Hello, SDSwiftUIPack!")
     .sdFont(.sys30b, color: .green)
 ```
 
+
+  
 ### View
 Padding can be easily specified using only CGFloat. You can set padding for top, leading, trailing, and bottom, or specify padding for all edges, horizontal, or vertical.
 ```swift
@@ -50,6 +52,9 @@ Text("Hello, SplashView!")
     .sdPaddingpadding(top: 10, leading: 10, bottom: 10, trailing: 10)
 ```
 
+
+
+  
 ### SearchBar
 You can use a Searchbar with various designs. Additionally, you can easily handle changes to the search bar’s text through modifiers such as onChange, onSearch, and onRemoveAll.  
 <img src="./Resources/SearchBar.png" width="400px" height="200px"/>
