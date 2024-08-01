@@ -14,7 +14,7 @@ iOS 15.0
 /// Package.swift
 /// ...
 dependencies: [
-    .package(url: "[https://github.com/SwiftUIX/SwiftUIX.git](https://github.com/sanhee16/SDSwiftUIPack.git)", branch: "main"),
+    .package(url: "https://github.com/sanhee16/SDSwiftUIPack.git", branch: "main"),
 ]
 /// ...
 ```
