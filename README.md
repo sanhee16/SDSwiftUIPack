@@ -11,7 +11,12 @@ iOS 14.0
 ### Swift Package Manager
 
 ```swift
-.package(name: "SDSwiftUIPack", url: "https://github.com/sanhee16/SDSwiftUIPack.git", from: "1.2.0")
+/// Package.swift
+/// ...
+dependencies: [
+    .package(url: "[https://github.com/SwiftUIX/SwiftUIX.git](https://github.com/sanhee16/SDSwiftUIPack.git)", branch: "main"),
+]
+/// ...
 ```
 
 ## Usage  
