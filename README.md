@@ -4,7 +4,7 @@ This package is a collection of useful tools for SwiftUI views.
 
 ## Requirements
 
-iOS 14.0
+iOS 15.0
 
 ## Installation
 
