@@ -52,7 +52,7 @@ Text("Hello, SplashView!")
 
 ### SearchBar
 You can use a Searchbar with various designs. Additionally, you can easily handle changes to the search bar’s text through modifiers such as onChange, onSearch, and onRemoveAll.  
-<img src="./Resources/SearchBar.png" width="100px" height="50px"/>
+<img src="./Resources/SearchBar.png" width="400px" height="200px"/>
 ```swift
 SearchBar("Enter nickname", text: $nickname, type: .none)
 SearchBar("Enter nickname", text: $nickname, type: .back(onClickBack: {
