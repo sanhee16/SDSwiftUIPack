@@ -100,24 +100,3 @@ extension SearchBar {
     }
 }
 
-
-extension SearchBar {
-    func onChange(_ onChange: ((String)->())?) -> SearchBar {
-        var searchBar = self
-        searchBar.onChange = onChange
-        return searchBar
-    }
-    
-    func onSearch(_ onSearch: ((String)->())?) -> SearchBar {
-        var searchBar = self
-        searchBar.onSearch = onSearch
-        return searchBar
-    }
-    
-    func onRemoveAll(_ onRemoveAll: (()->())?) -> SearchBar {
-        var searchBar = self
-        searchBar.onRemoveAll = onRemoveAll
-        return searchBar
-    }
-}
-
