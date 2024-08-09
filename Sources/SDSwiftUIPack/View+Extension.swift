@@ -20,6 +20,15 @@ public extension View {
     }
 }
 
+// MARK: Border
+public extension View {
+    func border(_ color: Color, lineWidth: CGFloat, cornerRadius: CGFloat) -> some View {
+        return self
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+            .overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: lineWidth).foregroundColor(color))
+    }
+}
+
 //MARK: Padding
 public extension View {
     func sdPadding(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0) -> some View {
