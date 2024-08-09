@@ -22,7 +22,7 @@ public extension View {
 
 //MARK: Padding
 public extension View {
-    func sdPaddingpadding(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0) -> some View {
+    func sdPadding(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0) -> some View {
         return self.padding(EdgeInsets(top: top, leading: leading, bottom: bottom, trailing: trailing))
     }
     func sdPaddingTop(_ value: CGFloat) -> some View {
